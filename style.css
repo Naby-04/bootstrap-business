@@ -1,0 +1,280 @@
+/* TABLE OF CONTENTS */
+/* -------------------
+1.General
+2.Navbar
+3.Banner
+4.About
+5.Services
+6.Portfolio
+7.Contacts
+8.Footer
+--------------------*/
+
+/* 1. General */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+  font-family: "Montserrat" sans-serif;
+}
+p {
+  margin-bottom: 0 !important;
+}
+
+:root {
+  /* Background Color */
+  --primary-color: #490909;
+  --secondary-color: #f6e1c5;
+  --third-color: #a5342bb0;
+  --fouth-color: #311919;
+  /* Text Color */
+  --text-color: #cb0d0d;
+  --text-white: #fff;
+  --primary-font: sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--primary-font);
+  background: url(images/background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Superposition sombre (noir avec une opacité de 50%) */
+  /* opacity: 0.9; */
+}
+a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 25px;
+}
+h1 {
+  font-family: "Monserrat";
+  font-weight: lighter !important;
+  color: #fff;
+}
+h3 {
+  font-size: 20px;
+  color: var(--text-color);
+}
+.button-active {
+  background: #7b261a;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+/*------------------------------------ 2.Navbar ------------------------------------*/
+
+header .row {
+  padding: 0;
+  /* background: #000; */
+}
+header ul {
+  background: var(--primary-color);
+  padding: 20px 0px;
+}
+header ul li .nav-link {
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.45s cubic-bezier(0, 0, 0.2, 1);
+  display: inline-block;
+  color: var(--text-white);
+  border: 0;
+  margin-right: 50px;
+}
+header ul li .nav-link.active {
+  background: #fff;
+  color: var(--text-color);
+  text-decoration: underline;
+  border: 1px solid;
+}
+
+/*-------------------------------- 3.Banner --------------------------------*/
+
+.details {
+  background: var(--secondary-color);
+  height: 350px;
+  width: 405px;
+  position: relative;
+  top: 90px;
+  left: 40px;
+  z-index: 1;
+}
+.details h2,
+.promise h2,
+.product1-text1 h2 {
+  font-family: "Montserrat";
+  font-weight: lighter;
+}
+.details p:first-of-type {
+  font-size: 12px;
+  font-weight: bold;
+}
+.details p:last-of-type {
+  font-size: 18px;
+}
+.details .button-active {
+  position: relative;
+  top: -15px;
+}
+.details-img {
+  max-height: 576px;
+  position: relative;
+  right: 40px;
+}
+
+/*---------------------------------- 4.promise ----------------------------------*/
+
+.promise {
+  background: var(--secondary-color);
+}
+.promise-bg,
+.store-bg {
+  background: var(--third-color);
+  width: 100%;
+}
+
+/*---------------------------------- 4.About ----------------------------------*/
+
+.about {
+  position: relative;
+  margin-bottom: 150px;
+}
+.store {
+  position: relative;
+  margin-bottom: 300px;
+}
+.about img,
+.store img {
+  width: 1170px;
+  height: 420px;
+  object-fit: cover;
+}
+.about-text,
+.store-text {
+  background: var(--secondary-color);
+  width: 726px;
+  position: absolute;
+  top: 400px;
+  left: 320px;
+}
+
+/*---------------------------------- 5.products ----------------------------------*/
+
+.products-wrapper {
+  margin: 50px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.product1,
+.product3,
+.product2 {
+  position: relative;
+}
+.product1,
+.product2 {
+  margin-bottom: 250px;
+}
+.products-wrapper img {
+  width: 844px;
+  max-width: 844px;
+  height: 604px;
+  margin: auto;
+}
+.product1-text1,
+.product3-text1 {
+  background: var(--secondary-color);
+  max-width: 413px;
+  height: 150px;
+  position: absolute;
+  font-size: 18px;
+  top: -70px;
+  right: -150px;
+}
+.product1-text1 p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.product1-text2,
+.product3-text2 {
+  background: var(--secondary-color);
+  max-width: 521px;
+  height: 189px;
+  position: absolute;
+  font-size: 18px;
+  bottom: -90px;
+  left: -250px;
+}
+.product2-text1 {
+  background: var(--secondary-color);
+  max-width: 413px;
+  height: 150px;
+  position: absolute;
+  font-size: 18px;
+  top: -70px;
+  left: -150px;
+}
+.product2-text2 {
+  background: var(--secondary-color);
+  max-width: 521px;
+  height: 189px;
+  position: absolute;
+  font-size: 18px;
+  bottom: -90px;
+  right: -250px;
+}
+
+/*---------------------------------- 6.store ----------------------------------*/
+
+.store-border {
+  border: 2px solid #cd5449;
+  width: 870px;
+  margin: auto;
+}
+.store-border > div {
+  background: var(--secondary-color);
+  width: 850px;
+  margin: auto;
+}
+.store-border > div div {
+  border-bottom: 1px solid gray;
+  width: 546px;
+  margin: auto;
+}
+.location {
+  font-size: 12px;
+}
+
+/*---------------------------------- 9.Footer ----------------------------------*/
+footer {
+  background-color: var(--fouth-color);
+  color: #fff;
+}
