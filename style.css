@@ -98,20 +98,18 @@ header ul {
   padding: 20px 0px;
 }
 header ul li .nav-link {
-  border-radius: 50px;
   font-size: 20px;
   font-weight: bold;
-  transition: all 0.45s cubic-bezier(0, 0, 0.2, 1);
-  display: inline-block;
   color: var(--text-white);
-  border: 0;
   margin-right: 50px;
 }
+header ul li .nav-link:hover {
+  color: var(--text-color) !important;
+}
 header ul li .nav-link.active {
-  background: #fff;
-  color: var(--text-color);
-  text-decoration: underline;
-  border: 1px solid;
+  background: none !important;
+  color: var(--text-color) !important;
+  border: none !important;
 }
 
 /*-------------------------------- 3.Banner --------------------------------*/
