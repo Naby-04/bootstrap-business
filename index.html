@@ -39,6 +39,7 @@
 
     <!-- link css -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsivestyle.css" />
   </head>
   <body>
     <div class="contenue pt-5">
@@ -127,7 +128,7 @@
                       aria-labelledby="pills-home-tab"
                     >
                       <!---------------------- banner home page ---------------------->
-                      <div class="row p-5">
+                      <div class="banner-wrapper row p-5">
                         <div
                           class="details col-12 col-md-3 text-center rounded-3 py-4"
                         >
@@ -303,58 +304,60 @@
                       role="tabpanel"
                       aria-labelledby="pills-store-tab"
                     >
-                      <div class="store-bg text-center mb-4 p-5">
-                        <div class="p-2 store-border rounded-3">
-                          <div class="p-3 text-center rounded-3">
-                            <p class="fw-1 mt-5">COME ON IN</p>
-                            <h2 class="fs-1 mb-5">WE’RE OPEN</h2>
+                      <div class="store-bg text-center mb-4 p-md-5">
+                        <div class="row p-2">
+                          <div class="col-12 p-2 store-border rounded-3 w-100">
+                            <div class="p-3 text-center rounded-3 w-100">
+                              <p class="fw-1 mt-5">COME ON IN</p>
+                              <h2 class="fs-1 mb-5">WE’RE OPEN</h2>
 
-                            <div class="d-flex justify-content-between mb-4">
-                              <p>Sunday</p>
-                              <p>Closed</p>
+                              <div class="d-flex justify-content-between mb-4">
+                                <p>Sunday</p>
+                                <p>Closed</p>
+                              </div>
+
+                              <div class="d-flex justify-content-between mb-4">
+                                <p>Monday</p>
+                                <p>7:00 AM to 8:00 PM</p>
+                              </div>
+
+                              <div class="d-flex justify-content-between mb-4">
+                                <p>Tuesday</p>
+                                <p>7:00 AM to 8:00 PM</p>
+                              </div>
+
+                              <div class="d-flex justify-content-between mb-4">
+                                <p>Wednesday</p>
+                                <p>7:00 AM to 8:00 PM</p>
+                              </div>
+
+                              <div
+                                class="d-flex justify-content-between text-danger mb-4"
+                              >
+                                <p>Thursday</p>
+                                <p>7:00 AM to 8:00 PM</p>
+                              </div>
+
+                              <div class="d-flex justify-content-between mb-4">
+                                <p>Friday</p>
+                                <p>7:00 AM to 8:00 PM</p>
+                              </div>
+
+                              <div class="d-flex justify-content-between">
+                                <p>Saturday</p>
+                                <p>7:00 AM to 8:00 PM</p>
+                              </div>
+
+                              <p class="mt-5">1116 Orchard Street</p>
+                              <p class="location">Gilden Valley. Minnesota</p>
+
+                              <p class="mt-5">Call Anytime</p>
+                              <p class="location">(317) 585-8468</p>
                             </div>
-
-                            <div class="d-flex justify-content-between mb-4">
-                              <p>Monday</p>
-                              <p>7:00 AM to 8:00 PM</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between mb-4">
-                              <p>Tuesday</p>
-                              <p>7:00 AM to 8:00 PM</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between mb-4">
-                              <p>Wednesday</p>
-                              <p>7:00 AM to 8:00 PM</p>
-                            </div>
-
-                            <div
-                              class="d-flex justify-content-between text-danger mb-4"
-                            >
-                              <p>Thursday</p>
-                              <p>7:00 AM to 8:00 PM</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between mb-4">
-                              <p>Friday</p>
-                              <p>7:00 AM to 8:00 PM</p>
-                            </div>
-
-                            <div class="d-flex justify-content-between">
-                              <p>Saturday</p>
-                              <p>7:00 AM to 8:00 PM</p>
-                            </div>
-
-                            <p class="mt-5">1116 Orchard Street</p>
-                            <p class="location">Gilden Valley. Minnesota</p>
-
-                            <p class="mt-5">Call Anytime</p>
-                            <p class="location">(317) 585-8468</p>
                           </div>
                         </div>
                       </div>
-                      <div class="row store">
+                      <div class="row store bg d-flex flex-column">
                         <div class="col-12 p-5 text-center">
                           <img
                             src="images/order2.jpeg"
@@ -399,7 +402,7 @@
       <!-- header part exit -->
 
       <!-- footer section -->
-      <footer class="text-center p-5 mt-5">
+      <footer class="text-center p-5">
         <p class="mb-0">Copyright © Website 2021</p>
       </footer>
       <!-- footer section exit -->

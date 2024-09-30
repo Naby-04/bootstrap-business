@@ -17,7 +17,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   font-family: "Montserrat" sans-serif;
 }
 p {
@@ -155,18 +155,12 @@ header ul li .nav-link.active {
 .store-bg {
   background: var(--third-color);
   width: 100%;
+  min-width: 200px;
+  margin: auto;
 }
 
 /*---------------------------------- 4.About ----------------------------------*/
 
-.about {
-  position: relative;
-  margin-bottom: 150px;
-}
-.store {
-  position: relative;
-  margin-bottom: 300px;
-}
 .about img,
 .store img {
   width: 1170px;
@@ -177,9 +171,9 @@ header ul li .nav-link.active {
 .store-text {
   background: var(--secondary-color);
   width: 726px;
-  position: absolute;
-  top: 400px;
-  left: 320px;
+  margin: auto;
+  position: relative;
+  top: -80px;
 }
 
 /*---------------------------------- 5.products ----------------------------------*/
@@ -254,17 +248,16 @@ header ul li .nav-link.active {
 
 .store-border {
   border: 2px solid #cd5449;
-  width: 870px;
+  max-width: 870px;
   margin: auto;
 }
 .store-border > div {
   background: var(--secondary-color);
-  width: 850px;
   margin: auto;
 }
 .store-border > div div {
   border-bottom: 1px solid gray;
-  width: 546px;
+  max-width: 546px;
   margin: auto;
 }
 .location {
