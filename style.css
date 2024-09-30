@@ -91,7 +91,6 @@ h3 {
 
 header .row {
   padding: 0;
-  /* background: #000; */
 }
 header ul {
   background: var(--primary-color);
