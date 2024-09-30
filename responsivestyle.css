@@ -3,6 +3,10 @@
     font-size: 20px;
     margin-right: 5px;
   }
+  .text-1,
+  .text-2 {
+    overflow-y: scroll;
+  }
 }
 
 @media (max-width: 767px) {
