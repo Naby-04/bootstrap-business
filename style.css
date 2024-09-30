@@ -117,7 +117,7 @@ header ul li .nav-link.active {
 .details {
   background: var(--secondary-color);
   height: 350px;
-  width: 405px;
+  width: auto;
   position: relative;
   top: 90px;
   left: 40px;
@@ -138,7 +138,7 @@ header ul li .nav-link.active {
 }
 .details .button-active {
   position: relative;
-  top: -15px;
+  top: 5px;
 }
 .details-img {
   max-height: 576px;
