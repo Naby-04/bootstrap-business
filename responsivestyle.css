@@ -1,7 +1,4 @@
 @media (max-width: 991px) {
-  /* custom css */
-
-  /* navbar */
   header ul li .nav-link {
     font-size: 20px;
     margin-right: 5px;
@@ -9,12 +6,17 @@
 }
 
 @media (max-width: 767px) {
-  /* banner wrapper */
+  .banner-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .details {
     font-size: 12px !important;
-    position: relative;
-    top: 90px;
-    left: -50px;
+    width: 500px;
+    margin-top: 10px;
+  }
+  .details-img {
+    right: 0;
   }
   .store-border {
     border: 2px solid #cd5449;
@@ -23,7 +25,6 @@
   }
 }
 @media (max-width: 657px) {
-  /* navbar */
   header ul li .nav-link {
     font-size: 10px;
     margin-right: 5px;
